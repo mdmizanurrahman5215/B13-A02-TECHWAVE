@@ -9,6 +9,11 @@
     font-optical-sizing: auto;
 }
 
+body {
+    background: #1A0B2E;
+    color: white;
+}
+
 /* common classes  */
 
 .container {
@@ -38,6 +43,12 @@
 .bg-color {
     background-color: #412567;
 }
+
+.text-regular {
+    font-size: 1rem;
+    color: white;
+}
+
 
 /* navbar section  */
 
@@ -113,12 +124,10 @@
 #hero {
 
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     background: url(./assets/hero-bg.png) center/cover no-repeat;
     display: flex;
     justify-content: center;
-
-
 }
 
 .hero-container {
@@ -232,6 +241,52 @@
 
 }
 
+/* podcast section  */
+
+.podcast-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.podcast-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+
+.podcast-container p {
+    font-size: 1rem;
+    line-height: 20px;
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+.card-container {
+    margin-top: 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container .card h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00FF88;
+    margin-bottom: 16px;
+
+}
+
+.card-container .card p {
+    font-size: 1rem;
+    line-height: 20px;
+    color: white;
+}
+
+
+
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -299,7 +354,7 @@
     /* hero section  */
     #hero {
         width: 100%;
-        padding:  40px 20px;
+        padding: 40px 20px;
     }
 
     .hero-container {
@@ -307,4 +362,22 @@
 
     }
 
+    /* podcast section  */
+    #podcast {
+        width: 100%;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    .podcast-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
