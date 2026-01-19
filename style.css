@@ -315,18 +315,62 @@ body {
 }
 
 /* techwave section  */
+#techwave{
+  width: 100%;
+  padding: 120px;
+  background-color: #230E3D;
+}
 
-.takewave-container{
+.takewave-container h1 {
     text-align: center;
 }
 
-.tech-card{
-    text-align: start;
+.techwave-card-container {
+    margin: 40px 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 225px);
 }
-.takewave-container{
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(3, 1fr);
+
+.tech-card {
+  
+    border-radius: 40px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 0 8px 4px #1c0b30;
+
+}
+
+.card-content img {
+    margin-bottom: 16px;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.col-span2 {
+    display: grid;
+    grid-column: span 2;
+}
+
+.row-span2 {
+    display: grid;
+    grid-row: span 2;
+
 }
 
 /* small device  */
@@ -387,5 +431,25 @@ body {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* techwave section  */
+
+    #techwave{
+    width: 100%;
+    padding: 40px 20px;
+    border: 1px solid #d81919;
+    }
+    .takewave-container{
+        width: 100%;
+    }
+    .techwave-card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       
+    }
+    .tech-card{
+        padding: 40px 20px;
     }
 }
