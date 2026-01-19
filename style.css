@@ -315,10 +315,10 @@ body {
 }
 
 /* techwave section  */
-#techwave{
-  width: 100%;
-  padding: 120px;
-  background-color: #230E3D;
+#techwave {
+    width: 100%;
+    padding: 120px;
+    background-color: #230E3D;
 }
 
 .takewave-container h1 {
@@ -334,13 +334,14 @@ body {
 }
 
 .tech-card {
-  
+
     border-radius: 40px;
     padding: 0 40px;
     display: flex;
     justify-content: start;
     align-items: center;
     box-shadow: 0 0 8px 4px #1c0b30;
+    overflow: hidden;
 
 }
 
@@ -373,13 +374,85 @@ body {
 
 }
 
+/* features section  */
+#features{
+    padding: 120px 0;
+}
+.features-container {
+    /* border: 1px solid #dfd1d1; */
+ 
+}
+
+.features-container h1 {
+    text-align: center;
+}
+
+.feature-card-container {
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-card {
+    width: 380px;
+    height: 440px;
+    /* border: 1px solid #b80707; */
+    border-radius: 40px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 0 0 8px 0 #6b33b4;
+    overflow: hidden;
+    /* border: none; */
+}
+.iframe-content{
+    /* border: 1px solid #1a0dd1; */
+    overflow: hidden;
+}
+.iframe-content iframe{
+    width: 100%;
+    height: 100%;
+}
+.text-content{
+    /* border: 1px solid #11f049; */
+    padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+}
+.text-content h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: start;
+}
+.text-content p{
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 12px;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+.clock span{
+color: #00FF88;
+
+}
+
 /* small device  */
 
 
 @media screen and (max-width:576px) {
-    body {
+    /* body {
         background: #8cdce2;
-    }
+    } */
 
     .navbar ul {
         display: none;
@@ -435,21 +508,41 @@ body {
 
     /* techwave section  */
 
-    #techwave{
-    width: 100%;
-    padding: 40px 20px;
-    border: 1px solid #d81919;
+    #techwave {
+        width: 100%;
+        padding: 40px 20px;
+       
     }
-    .takewave-container{
+
+    .takewave-container {
         width: 100%;
     }
-    .techwave-card-container{
+
+    .techwave-card-container {
         display: flex;
         flex-direction: column;
         gap: 30px;
-       
+
     }
-    .tech-card{
+
+    .tech-card {
         padding: 40px 20px;
     }
+
+    /* feature section  */
+    
+      #features{
+            padding: 40px 16px;
+    
+        }
+    .features-container{
+        width: 100%;
+    }
+    .feature-card-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
 }
