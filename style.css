@@ -314,12 +314,20 @@ body {
 
 }
 
-/* .btn1-img {
- background-clip: ;
-   
+/* techwave section  */
 
-} */
+.takewave-container{
+    text-align: center;
+}
 
+.tech-card{
+    text-align: start;
+}
+.takewave-container{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+}
 
 /* small device  */
 
