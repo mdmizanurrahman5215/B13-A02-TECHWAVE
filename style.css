@@ -69,6 +69,7 @@ body {
     font-size: 65px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .logo span {
@@ -118,6 +119,7 @@ body {
 
 
 .menubar {
+    cursor: pointer;
     display: none;
 }
 
@@ -551,7 +553,7 @@ body {
     border-radius: 40px;
     background-color: var(--accent-color);
     border: none;
-    transform: translateY(-55px) rotate(25deg);
+    transform: translateY(-50px) rotate(25deg);
     opacity: 0;
     transition: 0.5s;
 
@@ -564,7 +566,7 @@ body {
 }
 
 .social-icon:hover::before {
-    transform: translateY(-55px) rotate(0);
+    transform: translateY(-50px) rotate(0);
     opacity: 1;
     transition: 0.5s;
 }
@@ -825,9 +827,10 @@ body {
     }
 
     .brand-container ul {
-     
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 
     .footer-container p {
