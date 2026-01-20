@@ -307,8 +307,12 @@ body {
 /* techwave section  */
 #techwave {
     width: 100%;
-    padding: 120px;
+    
     background-color: #230E3D;
+}
+.takewave-container{
+    padding: 100px 0;
+    /* border: 1px solid #e9dddd; */
 }
 
 .takewave-container h1 {
@@ -629,9 +633,11 @@ body {
 
     .takewave-container {
         width: 100%;
+        padding:0;
     }
 
     .techwave-card-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 30px;
