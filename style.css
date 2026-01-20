@@ -17,7 +17,7 @@ body {
 /* common classes  */
 
 .container {
-    width: 62%;
+    /* width: 62%; */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -650,6 +650,9 @@ body {
     }
 
     .features-container {
+        width: 100%;
+    }
+    .feature-card{
         width: 100%;
     }
 
