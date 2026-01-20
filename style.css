@@ -104,14 +104,15 @@ body {
     border: none;
     text-align: center;
     cursor: pointer;
-    transition: all 0.5 ease;  
+    transition: all 0.5 ease;
 }
+
 .btn:hover {
     box-shadow:
         0 0 25px rgba(247, 233, 63, 1),
         0 0 35px rgba(251, 9, 180, 1),
         0 0 45px rgba(145, 0, 248, 1);
-        transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 
@@ -135,6 +136,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    /* border: 1px solid #f1e9e9; */
 }
 
 .banner-content {
@@ -211,7 +213,7 @@ body {
     background-color: #00FF88;
     z-index: -1;
     transition: 0.5s;
-  
+
 }
 
 
@@ -228,9 +230,10 @@ body {
 .banner-btn2:hover img {
     filter:
         brightness(0) saturate(100%) invert(9%) sepia(38%) saturate(1280%) hue-rotate(245deg) brightness(90%) contrast(95%);
-         transition: 0.5s;
+    transition: 0.5s;
 }
-.banner-btn2:hover{
+
+.banner-btn2:hover {
     border: 2px solid #000000;
     transition: 0.5s;
 }
@@ -245,19 +248,21 @@ body {
 
 
 .image-container {
-    margin: 0 auto;
-}
 
-.bg-img {
-    width: max-content;
-    padding: 69px 75px 81px 75px;
+    /* border: 5px solid #08e939; */
     background: url(./assets/hero-circle.png) center / contain no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    text-align: center;
+}
 
+.bg-img {
+    position: relative;
+    /* border: 8px solid #d40707; */
+}
+
+.bg-img img {
+    margin: 80px 116px;
 }
 
 .bg-img .badge {
@@ -270,10 +275,33 @@ body {
     font-weight: 600;
     border-radius: 1000px;
     top: 12px;
-    right: 23px;
-    animation: pulse 1s linear infinite;
+    right: 60px;
+    animation: pulse 1.2s ease-in-out infinite;
+    cursor: pointer;
+    z-index: 999;
+
 
 }
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.6);
+    }
+
+    75% {
+        transform: scale(1.08);
+        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.6);
+    }
+}
+
 
 /* podcast section  */
 
@@ -321,22 +349,6 @@ body {
 
 
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.6);
-    }
-
-    75% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.6);
-    }
-}
 
 
 .bg-img img {
@@ -532,10 +544,10 @@ body {
     cursor: pointer;
 }
 
-.social-icon::before{
+.social-icon::before {
     content: attr(data-social);
     position: absolute;
-    padding: 10px 16px;
+    padding: 6px 16px;
     border-radius: 40px;
     background-color: var(--accent-color);
     border: none;
@@ -545,18 +557,19 @@ body {
 
 
 }
-.social-icon:hover{
-   background-color: var(--accent-color);
-   border: none;
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+    border: none;
 }
 
-.social-icon:hover::before{
+.social-icon:hover::before {
     transform: translateY(-55px) rotate(0);
     opacity: 1;
     transition: 0.5s;
 }
 
-.social-icon::after{
+.social-icon::after {
     content: " ";
     position: absolute;
     height: 0;
@@ -568,7 +581,8 @@ body {
     opacity: 0;
     transition: 0.5s;
 }
-.social-icon:hover::after{
+
+.social-icon:hover::after {
     transform: translateY(-30px) rotate(0);
     opacity: 1;
     transition: 0.5s;
@@ -646,7 +660,7 @@ body {
 }
 
 .copy-right {
-    padding-top: 5px; 
+    padding-top: 5px;
     border-top: 1px solid white;
 
 }
@@ -656,9 +670,6 @@ body {
 
 
 @media screen and (max-width:576px) {
-    /* body {
-        background: #8cdce2;
-    } */
 
     .navbar ul {
         display: none;
@@ -692,6 +703,21 @@ body {
         margin: 0;
         width: 100%;
 
+
+    }
+
+    /* .bg-img{
+        border: 1px solid #f0ebeb;
+    } */
+
+    .bg-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bg-img .badge {
+        top: 6px;
+        right: 20px;
     }
 
     /* podcast section  */
@@ -799,6 +825,7 @@ body {
     }
 
     .brand-container ul {
+     
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
