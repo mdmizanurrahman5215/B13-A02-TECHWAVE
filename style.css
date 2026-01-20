@@ -145,7 +145,7 @@ body {
     text-align: center;
 }
 
-.banner-content .hero-head {
+.banner-content .banner-head {
     font-size: 4rem;
     font-weight: bolder;
     color: white;
@@ -311,6 +311,10 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+}
+
+.podcast-content {
+    padding: 0 200px;
 }
 
 .podcast-container h1 {
@@ -727,6 +731,10 @@ body {
         width: 100%;
         margin: 0;
         padding: 40px 20px;
+    }
+
+    .podcast-content {
+        padding: 0;
     }
 
     .podcast-container {
