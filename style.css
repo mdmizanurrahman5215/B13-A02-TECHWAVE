@@ -103,8 +103,18 @@ body {
     border-radius: 10000px;
     border: none;
     text-align: center;
-
+    cursor: pointer;
+    transition: all 0.5 ease;  
 }
+.btn:hover {
+    box-shadow:
+        0 0 25px rgba(247, 233, 63, 1),
+        0 0 35px rgba(251, 9, 180, 1),
+        0 0 45px rgba(145, 0, 248, 1);
+        transform: scale(1.03);
+}
+
+
 
 .menubar {
     display: none;
@@ -181,15 +191,48 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 1px solid #00FF88;
+    border: 2px solid #00FF88;
     border-radius: 10000px;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
 
 }
 
-.banner-btn2 img {
-    color: #00FF88;
+.banner-btn2::before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00FF88;
+    z-index: -1;
+    transition: 0.5s;
+  
+}
 
+
+.banner-btn2:hover::before {
+    width: 100%;
+}
+
+.banner-btn2:hover p {
+    color: #1A0B2E;
+    transition: 0.5s;
+
+}
+
+.banner-btn2:hover img {
+    filter:
+        brightness(0) saturate(100%) invert(9%) sepia(38%) saturate(1280%) hue-rotate(245deg) brightness(90%) contrast(95%);
+         transition: 0.5s;
+}
+.banner-btn2:hover{
+    border: 2px solid #000000;
+    transition: 0.5s;
 }
 
 .banner-btn2 p {
@@ -199,6 +242,7 @@ body {
     color: #00FF88;
 
 }
+
 
 .image-container {
     margin: 0 auto;
@@ -307,10 +351,11 @@ body {
 /* techwave section  */
 #techwave {
     width: 100%;
-    
+
     background-color: #230E3D;
 }
-.takewave-container{
+
+.takewave-container {
     padding: 100px 0;
     /* border: 1px solid #e9dddd; */
 }
@@ -555,8 +600,9 @@ body {
     font-size: 1rem;
     color: #FAFAFA;
 }
-.copy-right{
-    
+
+.copy-right {
+    padding-top: 5px; 
     border-top: 1px solid white;
 
 }
@@ -633,7 +679,7 @@ body {
 
     .takewave-container {
         width: 100%;
-        padding:0;
+        padding: 0;
     }
 
     .techwave-card-container {
@@ -658,7 +704,8 @@ body {
     .features-container {
         width: 100%;
     }
-    .feature-card{
+
+    .feature-card {
         width: 100%;
     }
 
