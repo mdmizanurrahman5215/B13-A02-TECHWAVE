@@ -17,7 +17,7 @@ body {
 /* common classes  */
 
 .container {
-    /* width: 62%; */
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .logo {
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -845,3 +845,6 @@ body {
         text-align: center;
     }
 }
+
+/* medium device  */
+
